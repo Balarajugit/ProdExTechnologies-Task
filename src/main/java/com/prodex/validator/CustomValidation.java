@@ -3,6 +3,7 @@ package com.prodex.validator;
 import java.util.Date;
 import java.util.regex.Pattern;
 
+import org.springframework.http.HttpStatus;
 import org.springframework.stereotype.Component;
 import org.springframework.util.StringUtils;
 
@@ -20,7 +21,7 @@ public class CustomValidation {
 			mess="please write instance name";
 		}
 		else if (!StringUtils.hasText(d.getIpAddress())) {
-			mess="please give instance no";
+			mess="please give ipAress";
 		}
 		return mess;
 	}
